@@ -40,9 +40,9 @@ function App() {
         setDarkMode(newMode);
         localStorage.setItem("darkMode", JSON.stringify(newMode));
         if (newMode) {
-            document.body.style.backgroundColor = "#333";
+            document.body.classList.add('dark-mode');
         } else {
-            document.body.style.backgroundColor = "#fff";
+            document.body.classList.remove('dark-mode');
         }
     }
 
