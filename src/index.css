@@ -1,5 +1,4 @@
 /* ============= GLOBAL CSS =============== */
-
 *,
 ::after,
 ::before {
@@ -35,6 +34,10 @@ html {
     --grey-700: #334155;
     --grey-800: #1e293b;
     --grey-900: #0f172a;
+
+    /* dark */
+    --dark-333: #333;
+
     /* rest of the colors */
     --black: #222;
     --white: #fff;
@@ -43,22 +46,25 @@ html {
     --green-light: #d1e7dd;
     --green-dark: #0f5132;
 
+    /* font sizes */
     --small-text: 0.875rem;
     --extra-small-text: 0.7em;
-    /* rest of the vars */
 
+    /* rest of the vars */
     --border-radius: 0.25rem;
     --letter-spacing: 1px;
     --transition: 0.3s ease-in-out all;
     --max-width: 1120px;
     --fixed-width: 600px;
     --view-width: 90vw;
-    /* box shadow*/
+
+    /* box shadow */
     --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    /* DARK MODE */
+
+    /* background & text color */
     --background-color: var(--grey-50);
     --text-color: var(--grey-900);
 }
@@ -73,9 +79,11 @@ body {
     display: flex;
     justify-content: center;
 }
+
 p {
     margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -116,6 +124,7 @@ small,
 a {
     text-decoration: none;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -126,8 +135,8 @@ ul {
     display: block;
     object-fit: cover;
 }
-/* buttons */
 
+/* buttons */
 .btn {
     cursor: pointer;
     color: var(--white);
@@ -139,24 +148,19 @@ ul {
     text-transform: capitalize;
     display: inline-block;
 }
+
 .btn:hover {
     background: var(--primary-700);
     box-shadow: var(--shadow-3);
 }
-.btn-hipster {
-    color: var(--primary-500);
-    background: var(--primary-200);
-}
-.btn-hipster:hover {
-    color: var(--primary-200);
-    background: var(--primary-700);
-}
+
 .btn-block {
     width: 100%;
 }
+
 .delete-btn {
     color: var(--red-dark);
-    padding: 0.25rem 0.25rem
+    padding: 0.25rem 0.5rem
 }
 
 /* alerts */
@@ -171,12 +175,13 @@ ul {
     color: var(--red-dark);
     background: var(--red-light);
 }
+
 .alert-success {
     color: var(--green-dark);
     background: var(--green-light);
 }
-/* form */
 
+/* form */
 .form {
     width: var(--fixed-width);
     background: var(--white);
@@ -238,6 +243,7 @@ main h2 {
     box-shadow: var(--shadow-1);
 }
 
+/* added */
 .sub-list {
     display: flex;
     gap: 20px;
@@ -248,6 +254,6 @@ main h2 {
 }
 
 .dark-mode {
-    background-color: #333;
+    background-color: var(--dark-333);
 }
 
